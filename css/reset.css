@@ -1,0 +1,76 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,menu,p,blockquote,ol,ul,dl,dd,td,th,figure,pre,button,input,textarea{margin:0;padding:0;font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp,tt{font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;line-height:1;}
+button,input,select,textarea,input{font-size:100%;font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;line-height:1;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a,a:hover{text-decoration:none;}
+a{color: #333;}
+textarea{resize:none;}
+body {
+    word-wrap: break-word;
+    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+img{vertical-align: middle;}
+*{outline: none;}
+a:focus,a:visited{outline:none;}
+/*.box-right-listul li a:hover,.ttt li a:hover,.ul2 li a:hover{color: #c70900;}*/
+.box li a:hover{color: #c70900;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+label,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="password"]{cursor:pointer;}
+ins{text-decoration:none;}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help;}
+input[type=submit],input[type=button],input[type=text],input[type=password]{-webkit-appearance:none;box-sizing:content-box;border:0;border-radius:0;box-shadow: none;}
+.clearfix:after{clear:both;display: block;content: "...";visibility: hidden;height: 0;font-size: 0;}
+.clearfix{*zoom:1;}
+address, caption, cite, code, dfn, em, strong, th, var, b, i, s {font-style: normal;font-weight: 400;}
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner { border:none; padding:0; }
+button, input[type="button"], input[type="submit"] {
+    line-height:normal !important;
+}
+/*.red{color: #c70900!important;}*/
+.font_red {
+    color: #c70900 !important;
+}
+.fl{float: left;}
+.fr{float: right;}
+.red{color: #c70900}
+a{text-decoration: none; cursor: pointer; color: #888;outline: none; }
+.page{width:100%;height: 44px;line-height: 44px;float: left;text-align:right;margin-bottom: 50px;margin-top: 20px;text-align: center;}
+.page p{font-size: 14px;}
+.page p a{padding:0 5px;color: #333;}
+.page p span{padding:0 15px;color: #333;}
+.page p .now{color:#c70900;border:0;}
+.page input{width: 16px;height: 16px;text-align: center;margin: 0 5px;border:1px solid #ccc;padding: 0;color: #333;}
+/*conbox*/
+.conbox{width:100%; background-color: #4b4b4b;font-size: 12px;float: left;/*padding-bottom: 35px;*/}
+/*summary*/
+.summary{float: left;/*margin-top: -62px;*/width: 100%;/*margin:40px 0 0 0;*//*margin-top: 30px;*//*height:62px;*/}
+/*.summary img{margin-top:10px;}*/
+/*footer*/
+.footernav{padding: 26px 0;width: 1150px;overflow: hidden;}
+.footernav_left {float: left; color: #fff;margin-left: -15px;}
+.footernav_left li{float: left;margin:0px 15px 0px;}
+.footernav_right{float: left;color: #fff;margin-left: 95px;}
+.copyright{width: 1125px;color: #fff;padding-top: 15px;margin-left: 0px;}
+.footernav_left li a{color:#fff;}
+.con_middle{width: 1150px;margin: 0px auto;padding-top: 28px;}
+/*city_choose_box*/
+.city_choose_box{position: absolute;display: none;left: -140px;top: 57px;width: 489px;height: 272px;background: url(../images/city_choose_bg.png) #fff no-repeat center;
+border:1px solid #c70900;z-index: 12;padding-top: 24px;padding-left: 20px;}
+.city_position_tt{font-size: 14px;color: #333;text-indent: 30px;background: url(../images/city_position.png) no-repeat left center;line-height: 24px;margin-bottom: 20px;}
+.city_list{overflow: hidden;width: 100%;}
+.city_list>li{display: inline-block;float: left;}
+.city_list>li a{font-size: 16px;color: #666;line-height: 30px;padding:0 14px;margin: 0;}
+.city_list>li:first-child a{padding-left: 0;}
+.city_list .now a{color: #c70900;}
+.other_city{font-size: 14px;color: #666;line-height: 24px;}
+.Header .adress {float: left;padding-right: 55px;position: relative;height: 60px;}
+.Header .adress li span {color: #c70900;margin-left: 8px;cursor: pointer;}
+.Header .adress li{color:#666;}
+.nav_list {height: 55px;}

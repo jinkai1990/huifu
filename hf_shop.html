@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-品牌</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_shop.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 4;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well clearfix">
+     <p class="location clearfix"><a href="hf_brand.html" class="loca_a">品牌</a><a href="hf_shop.html" class="loca_a loca_last">门店展示</a>
+     </p>
+     <div class="shop_part01 part_common">
+       <p class="shop_l fl">
+         <img src="./images/shop_img01.gif" width="730" height="550" alt="图片"/>
+       </p>
+       <div class="shop_r fl">
+          <h1 class="shop_title">广州旗舰体验门店</h1>
+          <p class="shop_text">无需排队即可享受专属接待<br/>到店即可领取众多奖品礼包</p>
+          <a href="hf_appointment.html" class="now">立即预约</a>
+          <p class="img_box">
+            <img src="./images/shop_img02.png" width="168" height="184"  alt="图片" >
+          </p>
+       </div>
+     </div>
+     <p class="shop_part02 part_common">
+       <img src="./images/shop_img03.gif" width="1200" height="554" alt="图片"/>
+     </p>
+     <div class="shop_part03 ">
+       <div class="shop_l fl">
+          <div class="box_l">
+            <h1 class="shop_title03">广州番禺门店</h1>
+            <p class="shop_text">广州市番禺区某某街道666号<br/>020-66666666</p>
+          </div>
+          <div class="box_l">
+            <h1 class="shop_title03">广州番禺门店</h1>
+            <p class="shop_text">广州市番禺区某某街道666号<br/>020-66666666</p>
+          </div>
+          <div class="box_l">
+            <h1 class="shop_title03">广州番禺门店</h1>
+            <p class="shop_text">广州市番禺区某某街道666号<br/>020-66666666</p>
+          </div>
+        </div> 
+      <div class="shop_img fl">
+          <p class="shop_r ">
+             <img src="./images/shop_img04.gif" width="600" height="530" alt="图片"/>
+           </p>
+          <p class="shop_r " style="display:none">
+             <img src="./images/shop_img03.gif" width="600" height="530" alt="图片"/>
+          </p>
+          <p class="shop_r " style="display:none">
+             <img src="./images/shop_img04.gif" width="600" height="530" alt="图片"/>
+          </p>
+      </div>
+
+     </div>
+              
+   </div>
+ 
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript">
+
+    $(function () {
+        $('.body_side .ul_nav a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        });
+      $('.shop_part03 .shop_l .box_l').mouseover(function(){
+         $(this).addClass('active').siblings().removeClass('active');
+         var tab =$(this).index();
+         $('.shop_part03>.shop_img>p').eq(tab).show().siblings('p').hide();
+      })
+
+
+       });
+
+
+    
+</script>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-支付成功</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_confirm-order.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well  clearfix">       
+        <div class="confirm_main">
+            <!-- 步骤 -->
+                <div class="confirm_ulbox">
+                    <ul class="nav_ul">
+                      <li class="confirm_li01">
+                        <p class="li01_p2 li_common">确认订单</p>
+                      </li>
+                      <li class="confirm_li022">
+                        <p class="li01_p22 li_common">确认支付</p>
+                        
+                      </li>
+                      <li class="confirm_li032">
+                        <p class="li01_p12 li_common">支付成功</p>
+                        
+                      </li>
+                    </ul>
+                </div>
+              <!-- 步骤 -->
+              <div class="pay_sucess">
+                <p class="pay_time">订单支付成功，订单号：<em class="order_nub">1161</em><em class="order_nub">1214</em><em class="order_nub">7288</em>780</p>
+                <div class="pay_message">
+                  <div class="message_box">
+                    <p class="message">
+                      支付成功！<span class="span_text">您可以查看<a href="#" class="look_order">订单详情</a></span>
+                    </p>
+                </div>
+                  </div>
+              </div>
+
+              <div class="tool_pay">
+                <ul class="eva_ul">
+                    <li class="li_box">
+                        <img  src="./images/toop_icon01.png" width="55" height="55" class="eva_iocn">
+                        <span class="icon_text">免费配送</span>
+                    </li>
+                    <li class="li_box">
+                        <img  src="./images/toop_icon02.png" width="55" height="55" class="eva_iocn">
+                        <span class="icon_text">免费自提</span>
+                    </li>
+                    <li class="li_box">
+                        <img  src="./images/toop_icon03.png" width="55" height="55" class="eva_iocn">
+                        <span class="icon_text">线下服务</span>
+                    </li>
+                    <li class="li_box">
+                        <img  src="./images/toop_icon04.png" width="55" height="55" class="eva_iocn">
+                        <span class="icon_text">终身保养</span>
+                    </li>
+                    <li class="li_box">
+                        <img  src="./images/toop_icon05.png" width="55" height="55" class="eva_iocn">
+                        <span class="icon_text">全程保险</span>
+                    </li>
+
+                </ul> 
+              </div>  
+
+
+              </div>
+        </div>
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.body_side .ul_nav a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        });
+      
+
+       });
+
+</script>
+</html>

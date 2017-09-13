@@ -1,0 +1,91 @@
+hf_index.html  首页
+
+hf_login.html  登陆
+
+hf_register.html  注册
+
+hf_service.html   服务
+
+hf_product-information.html 产品信息
+
+hf_personal-center.html 个人中心
+
+hf_per-address-manage.html 个人中心-地址管理
+
+hf_convert-discount.html 兑换优惠券
+
+hf_my-order-all.html 我的订单-全部订单
+
+hf_order-noPlay.html 我的订单-未付款
+
+hf_order-already.html 我的订单-未付款
+
+hf_order-finish.html 我的订单-未付款
+
+hf_my-integration.html 我的积分-获取积分
+
+hf_my-integration01.html 我的积分-积分消费
+
+hf_my-collect.html 我的收藏
+
+hf_my-evaluate.html  我的评价-全部
+
+hf_my-evaluate01.html  我的评价-已评价
+
+hf_my-evaluate02.html  我的评价-未评价
+
+hf_my-discount.html 我的优惠券-全部
+
+hf_my-discount01.html 我的优惠券-未使用
+
+hf_my-discount02.html 我的优惠券-已使用
+
+hf_my-discount03.html 我的优惠券-已过期
+
+hf_my-appointment.html 我的预约
+
+hf_password-change.html 密码修改-验证身份
+
+hf_password-change01.html 密码修改-更改密码
+
+hf_password-change02.html 密码修改-完成操作 
+
+hf_phone-change.html 密码修改-验证身份
+
+hf_phone-change01.html 密码修改-更改手机
+
+hf_phone-change02.html 密码修改-完成操作 
+
+hf_information-change.html 资料修改
+
+hf_shopping-cart.html 购物车
+
+hf_message.html 资讯
+
+hf_marriage.html 婚嫁
+
+hf_activity.html 活动
+
+hf_activity-details.html 活动详情
+
+hf_relation.html 联系我们
+
+hf_brand.html 品牌
+
+hf_shop.html 门店
+
+hf_product-classify.html 款式分类
+
+hf_appointment.html 预约服务
+
+hf_confirm-order.html 确认订单
+
+hf_confirm-payment.html 确认支付(未做页面)    
+
+hf_payment-success.html 支付成功
+
+hf_custom-made.html 私人定制
+
+hf_encyclopedia.html 珠宝百科
+
+hf_encyclopedia-details.html 珠宝百科-详情页

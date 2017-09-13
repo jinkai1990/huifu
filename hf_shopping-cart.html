@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-购物车</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_shopping-cart.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well  clearfix">
+
+        <div class="shoppCart ">
+            <p class="body_title">我的收藏</p>
+
+            <div class="collect">
+                <form action="">
+                    <table  class="table_collect" >
+                        <tr class="collect_tr">
+                            <th width="293">商品信息</th>
+                            <th width="155">尺寸信息</th>
+                            <th width="200">价格</th>                            
+                            <th width="187">数量</th>
+                            <th width="200">价格</th>
+                            <th width="145">操作</th>
+                        </tr>
+                        <tr class="per_center pric_each">
+                            <td >
+                               <label class="shop_input">
+                                 <i class="checkbox_bg checkbox_on"></i>
+                                 <input type="checkbox" name="" value="checkbox1" class="checkbox"/>
+                               </label>
+                               <img src="./images/01.png" width="106" height="106" class="collet_img" />
+                               <span class="collect_info">18K金钻石手镯Dream系列Dear</span>
+                            </td>
+                            <td >18</td>
+                            <td >￥<span class="totle">17000.10</span></td>                            
+                            <td class="num_box">
+                                    <label class="nub">数量：</label>
+                                    <input class="min" name="" type="button" value="-" /> 
+                                    <input class="text_box" readonly="readonly" name="" type="text" value="1" /> 
+                                    <input class="add" name="" type="button" value="+" />                
+                            </td>
+                            <td ><em class="collect_price">￥<span class="unit">0</span></em></td>
+                            <td >
+                               <a href="javascrpit:void(0)" class="adress_btn1">收藏</a>
+                               <a  onclick="removedell(this)" class="collect_dell">删除</a>
+                            </td>                               
+                        </tr>
+                        <tr class="per_center pric_each">
+                            <td >
+                               <label class="shop_input">
+                                   <i class="checkbox_bg checkbox_on"></i>
+                                   <input type="checkbox" name="" value="checkbox1" class="checkbox"/>
+                               </label>
+                               <img src="./images/01.png" width="106" height="106" class="collet_img" />
+                               <span class="collect_info">18K金钻石手镯Dream系列Dear</span>
+                            </td>
+                            <td >16</td>
+                            <td >￥<span class="totle">10.10</span></td>                            
+                            <td class="num_box">
+                                    <label class="nub">数量：</label>
+                                    <input class="min" name="" type="button" value="-" /> 
+                                    <input class="text_box" readonly="readonly" name="" type="text" value="1" /> 
+                                    <input class="add" name="" type="button" value="+" />                
+                            </td>
+                            <td ><em class="collect_price">￥<span class="unit">0</span></em></td>
+                            <td >
+                               <a href="javascrpit:void(0)" class="adress_btn1">收藏</a>
+                               <a  onclick="removedell(this)" class="collect_dell">删除</a>
+                            </td>                               
+                        </tr>
+                          <tr class="shoppCart_td">
+                            <td colspan="5" class="shopp_td_last">
+                               <a  href="javascrpit:void(0)" class="collect_dell">清空购物车</a>
+                            </td>
+                            <td class="shopp_td02">订单总额 <em class="collect_price">￥<span id="common_sum">0</span></em></td>
+                            
+                        </tr>
+                         <tr class="per_center">
+                             <td colspan="6" class="td_btn">
+                                 <input type="submit" value="立即结算" class="shopp_bnt" onclick="buy(this)"/>
+                             </td>
+                         </tr>
+
+                    </table>
+                </form>
+
+                    <!-- 收藏成功 -->
+                    <div class="collect_success">
+                        <div class="shopp_coll">
+                            <p class="pass_set">收藏成功！</p>
+                        </div>
+                    </div>
+                    <!-- 收藏成功 -->
+                    <!-- 注：收藏为空内容 -->
+                      <p class="collect_kong">您的收藏夹为空，赶紧添加您喜爱的商品吧<br/>
+                        <a href="hf_product-classify.html" class="collect_add">添加商品</a>
+                     </p>
+                    <!-- 注：收藏为空内容  end -->
+
+            </div>
+         </div>                               
+    </div>
+    <!-- 删除全部收藏提示框 -->
+    <div class="dell_all">
+       <div class="shopp_dell">
+            <p class="hint">确定要删除购物车中的所有商品吗？</p>
+            <div class="btn_box">
+                <a href="javascrpit:void(0)" class="dell_btn">确定</a>
+                <a href="javascrpit:void(0)" class="dell_cancel">取消</a>
+
+            </div>
+        </div> 
+    </div>
+
+    <!-- 删除全部收藏提示框 -->
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+
+<script type="text/javascript">
+//提交表单
+$('form').submit(function(){
+  var error = "";
+  if (error) {
+        showErrorMsg(error);
+        return false;
+    }
+  $.ajax({
+    cache: true,
+    type: POST,
+    url: $('form')[0].action,
+    data: $('form').serialize(),//你的form
+    success:function (data){
+      if (data == 1) {
+        window.location.href = "{}";
+      }else{
+        showErrorMsg(data.msg);
+      }
+    }
+  })
+  return false;
+});
+
+//计算
+$(function(){
+  //初始化
+  initPrice();
+  totl();
+  adddel();
+  function initPrice() {
+    $(".unit").each(function() {
+      var multi = 0;
+      var vall = $(this).parents('.pric_each').find('.text_box').val();
+      multi = parseFloat($(this).parent().parent().prev().prev().find('.totle').text())*parseInt(vall) ;
+      multi = (multi.toFixed(2));
+      $(this).text(multi);
+    });
+  }
+  // 合计
+  function totl() {
+    var sum = 0;
+    $(".unit").each(function() {
+      sum += parseFloat($(this).text());
+      sum1 = (sum.toFixed(2));
+      $("#common_sum").text(sum1);
+    })
+  }
+  function adddel(){
+          //小计和加减
+            //加
+            $(".add").each(function() {
+              $(this).click(function() {
+                var multi = 0;
+                var vall = $(this).prev().val();
+                vall++;
+                $(this).prev().val(vall);
+                multi = parseFloat($(this).parent().prev().find('.totle').text())*parseInt(vall) ;
+                multi = (multi.toFixed(2));
+                $(this).parent().next().find('.unit').text(multi);
+                totl();
+              })
+
+            })
+              //减
+          $(".min").each(function() {
+              $(this).click(function() {
+                var multi1 = 0;
+                var vall1 = $(this).next().val();
+                vall1--;
+                if(vall1 <= 0) {
+                  vall1 = 1;
+                }
+                $(this).next().val(vall1);
+                multi1 = parseInt(vall1) * parseFloat($(this).parent().prev().find('.totle').text());
+                multi1 = (multi1.toFixed(2));
+                $(this).parent().next().find('.unit').text(multi1);
+                totl();
+              })
+
+            })
+      }
+
+          //
+          $('.body_side .ul_nav a').click(function(){
+              $(this).parent().addClass('active').siblings('li').removeClass('active');
+          });
+          // $('.adress_btn2').click(function(){
+          //     $(this).parents('.per_center').remove();
+          // });
+          var WHeight = $(document).height();
+          $(".dell_all").height(WHeight-292);
+
+         });
+      //收藏成功提示setTimeout
+          $('.adress_btn1').click(function(){
+              $('.collect_success').css('display','block');
+
+              setTimeout( "text()",1000);
+          });
+
+          function text(){
+              $('.collect_success').css('display','none')
+          }
+                   
+
+      //删除收藏
+      function removedell(obj){
+          $(obj).parents('.per_center').remove();
+          if($(".per_center").length == 0) {
+             $('.table_collect').children().children().not('.collect_tr').remove();  
+          }
+      }
+
+         $(function () {
+          $('.collect_dell').click(function(){
+              var btn =$(this).index();
+              $('.dell_all').css('display','block');
+
+          })
+          $('.dell_btn').click(function(){
+                $('.table_collect').children().children().not('.collect_tr').remove();
+                $('.collect_kong').css('display','block');
+                $('.dell_all').css('display','none');
+              })
+          $('.dell_cancel').click(function(){
+              $('.dell_all').css('display','none');
+          })
+          //复选框
+          $('.shop_input').click(function(){
+              var This = $(this);
+              if (This.children().hasClass('checkbox_on')) {
+                This.children().addClass('checkbox_off').siblings().removeClass('checkbox_on');
+              }else{
+                This.children().addClass('checkbox_on').siblings().removeClass('checkbox_off');
+              }
+          })
+
+        })  
+
+      
+  </script>
+  </html>

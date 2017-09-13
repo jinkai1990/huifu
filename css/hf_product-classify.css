@@ -1,0 +1,195 @@
+.classify_nav{
+	overflow: hidden;
+	height: auto;
+	margin: 30px 0px;
+	line-height: 30px;
+}
+.classify_nav .class_text{
+	font-size: 12px;
+	content: #000;
+}
+.classify_nav .class_sreach{
+	overflow: hidden;
+	height: 30px;
+    line-height: 28px;
+}
+.classify_nav .class_sreach .key_box{
+	font-size: 12px;
+	color: #000;
+}
+.classify_nav .class_sreach .key_box .key_text{
+	display: inline-block;
+	margin-right: 10px;
+}
+.classify_nav .class_sreach .key{
+	font-size: 12px;
+	color: #999;
+}
+.classify_nav .class_sreach .key em{
+	margin:0px 14px;
+}
+.classify_nav .class_sreach .input_box{
+	overflow: hidden;
+}
+.classify_nav .class_sreach .input_box .in_text{
+	border:1px solid #a0a0a0;
+	background: none;
+	color: #000;
+	font-size: 12px;
+	width: 220px;
+	height: 24px;
+	line-height: 24px;
+	padding:0px 10px;
+}
+.classify_nav .class_sreach .input_box .sreach{
+	border:1px solid #a0a0a0;
+	background: #eee;
+	color: #000;
+	font-size: 12px;
+	width: 40px;
+	height: 24px;
+	line-height: 22px!important;
+	text-align: center;
+	margin-left: 10px;
+}
+.nav_bottom{
+	overflow: hidden;;
+	height: auto;
+	margin-bottom: 24px;
+}
+.nav_bottom .ul_common{
+	height: 40px;
+    line-height: 40px;	
+	overflow: hidden;
+	border:1px solid #d2d2d2;
+}
+.nav_bottom .ul_common li{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	width: 94px;
+}
+.nav_bottom .ul_common li .a_li{
+	font-size: 12px;
+	color: #999;	
+}
+.nav_bottom .ul_common li .a_li:hover{
+	color: #fe4c4c;
+}
+.nav_bottom .ul_common li .a_li.active{
+	color: #fe4c4c;
+}
+
+.nav_bottom .ul_common .li01{
+    background: #eee;
+    width: 170px;
+}
+.nav_bottom .ul_common .li01 .a_li{
+    color: #000;
+}
+.nav_bottom .ul_second{
+	margin-top: -1px;
+}
+
+/*产品列表*/
+.classify{
+	background: #fafafa;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.classify_box{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.classify .classify_ul{
+	height: auto;
+	overflow: hidden;
+	width: 1226px;
+	margin-top: 34px;
+}
+
+.classify .classify_ul li{
+	float: left;
+	border: 1px solid #fff;
+	width: 380px;
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	text-align: center;
+	margin-right: 26px;
+	margin-bottom: 26px;
+}
+.classify .classify_ul li:hover{
+	border: 1px solid #fe4c4c;
+}
+
+.classify .classify_ul li .classify_imgbox{
+	height: 375px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 36px;
+	display: block;
+}
+.classify .classify_ul li .pro_name{
+	font-size: 16px;
+	color: #000;
+}
+.classify .classify_ul li .pro_name:hover{
+	color: #fe4c4c;
+}
+.classify .classify_ul li .pro_price{
+	font-size: 12px;
+	color: #fe4c4c;
+	margin-top: 8px;
+	margin-bottom:50px; 
+}
+.classify_page{
+	background: #fff;
+	margin-bottom: 36px;
+	padding: 40px 0;
+    margin-top: 0px;
+}
+.toop{
+    background: #fff;
+    text-align: center;	
+    border-bottom: 1px solid #f2f2f2;
+    width: 1200px;
+    margin: 0 auto;
+}
+.toop .eva_ul {
+    overflow: hidden;
+    height: auto;
+    padding: 40px 0px;
+    display: inline-block;
+
+}
+.toop .eva_ul .li_box {
+    float: left;
+    width: 134px;
+    height: 55px;
+    line-height: 55px;
+    margin: 0px 36.4px;
+}
+.toop .eva_ul .li_box .icon_text {
+    font-size: 12px;
+    color: #333;
+    margin-left: 20px;
+}
+
+
+
+
+
+/*产品列表*/
+
+
+
+
+
+
+
+
+

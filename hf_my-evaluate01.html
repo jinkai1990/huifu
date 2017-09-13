@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-我的评价</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well  clearfix">
+        <a href="javascript:window.history.back();" class="go_back clearfix">个人中心</a>
+        <!-- 个人中心 -->
+        <div class="body_side fl">
+            <ul class="ul_nav">
+                <li class="li_01"><a href="hf_personal-center.html" class="a_style">个人中心</a></li>
+                <li><a href="hf_my-order-all.html" class="a_style">我的订单</a></li>
+                <li  class=" active"><a href="hf_my-evaluate.html" class="a_style">我的评价</a></li>
+                <li><a href="hf_my-integration.html" class="a_style">我的积分</a></li>
+                <li><a href="hf_my-collect.html" class="a_style">我的收藏</a></li>
+                <li><a href="hf_my-appointment.html" class="a_style">我的预约</a></li>
+                <li><a href="hf_convert-discount.html" class="a_style">我的优惠券</a></li>
+            </ul>
+            <ul class="ul_nav ul_nav_02">    
+                <p class="li_title">个人信息</p>
+                <li><a href="hf_information-change.html" class="a_style">资料修改</a></li>
+                <li><a href="hf_password-change.html" class="a_style">密码修改</a></li>
+                <li><a href="hf_per-address-manage.html" class="a_style">地址管理</a></li>
+  
+            </ul>
+        </div>
+        <!-- 左边主体 -->
+        <div class="body_right fr">
+            <p class="body_title">我的评价</p>
+
+            <!-- 全部评价-->
+            <div class=" per_evaluate">
+                <div class="order_tab">
+                    <ul class="order_ul">
+                        <li> <a  href="hf_my-evaluate.html" class="order_a">全部评价 0</a></li>
+                        <li class="active" ><a  href="hf_my-evaluate01.html"  class="order_a">已评价 0</a></li>
+                        <li ><a  href="hf_my-evaluate02.html"  class="order_a">待评价 0</a></li>                       
+                    </ul>
+                </div>
+                <table class="table_collect ">
+                    <tr class="order_center">
+                        <th width="369">商品信息</th>
+                        <th width="174">商品价格</th>
+                        <th width="120">购买时间</th>
+                        <th width="253">评价晒单</th>
+                    </tr>
+
+                    <tr class="per_center ">
+                        <td >
+                           <img src="./images/01.png" width="106" height="106" class="collet_img" />
+                           <span class="collect_info">18K金钻石手镯Dream系列Dear</span>
+                        </td>
+                        <td >￥17100.00</td>
+                        <td >2017-04-02  12:00:00</td>
+                        <td class="evaluate_td04">这个东西很美很美，真的非常美非常美，美爆了！真的非常美非常美，美爆了！真的 ...</td>
+
+                    </tr>
+
+                </table>
+                    <!-- 注：评价为空内容 -->
+                     <p id="collect_kong" class="collect_kong">您的评价为空，赶紧评价已买的商品吧<br/>
+                        <a href="javascrpit:void(0)" class="collect_add">评价商品</a>
+                     </p>
+                    <!-- 注：评价为空内容  end -->
+
+            </div>
+            <!-- 全部评价 -->
+
+
+        </div>
+        <!-- 左边主体 -->
+        <!-- 个人中心 -->
+    </div>
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript">
+    $(function () {
+        $('.body_side .ul_nav a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        })
+    })
+     //评价为空
+    var kong =document.getElementById('collect_kong');
+    function evaKong(obj){
+        if($('.per_center').length == 0) {
+           $('.table_collect').remove();
+              if($(".table_collect").length == 0){
+                kong.style.display='block';
+
+                }
+        }
+    }
+
+</script>
+</html>

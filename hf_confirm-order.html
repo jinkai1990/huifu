@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-确认订单</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_confirm-order.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well  clearfix">       
+        <div class="confirm_main">
+            <!-- 步骤 -->
+                <div class="confirm_ulbox">
+                    <ul class="nav_ul">
+                      <li class="confirm_li01">
+                        <p class="li01_p2 li_common">确认订单</p>
+                      </li>
+                      <li class="confirm_li02">
+                        <p class="li01_p1 li_common">确认支付</p>
+                        
+                      </li>
+                      <li class="confirm_li03">
+                        <p class="li01_p1 li_common">支付成功</p>
+                        
+                      </li>
+                    </ul>
+                </div>
+              <!-- 步骤  end-->
+              <!-- 内容 -->
+              <div class="confirm_part2">
+                  <div class="express">
+                      <div class="title_box">
+                          <h2 class="tilie fl">配送方式</h2>
+                          <p class="border_b"></p>
+                      </div>
+                    <form action="" class="form_box">
+                          <div class="label">
+                              <label class="label_box fl">
+                                <input type="radio" value="速递公司运送(免费)" name="1" checked="checked" size="20" class="input_bnt" />
+                                <span class="express_text">速递公司运送(免费)</span>
+                              </label>
+                              <label class="label_box fl">
+                                <input type="radio" value="分店自取" name="1" class="input_bnt" />
+                                <span class="express_text">分店自取</span>
+                              </label>
+                          </div>
+                          <div class="tab adress_cofirm" >
+                              <p class="p_title">收货地址<a href="#" class="add_adress">添加新地址</a></p>
+                              <ul class="adress_ul">
+                                 <li class="active">
+                                    <p class="p_sheng">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">小骨<em class="margin_lr">收</em></p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                 </li>
+                                 <li>
+                                    <p class="p_sheng">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">小骨<em class="margin_lr">收</em></p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                  </li>
+                                 <li>
+                                    <p class="p_sheng">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">小骨<em class="margin_lr">收</em></p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                </li>
+
+                              </ul>
+                          </div>
+                          <div class="tab adress_cofirm" style="display:none;">
+                              <p class="p_title">请选择门店</p>
+                              <ul class="adress_ul">
+                                 <li class="active">
+                                    <p class="shop_name">汇福珠宝中山门店一分店</p>
+                                    <p class="p_common">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                 </li>
+                                 <li>
+                                    <p class="shop_name">汇福珠宝中山门店二分店</p>
+                                    <p class="p_common">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                 </li>
+                                 <li>
+                                    <p class="shop_name">汇福珠宝中山门店三分店</p>
+                                    <p class="p_common">广东省<em class="margin_lr">中山市</em>中山</p>
+                                    <p class="p_common">民科西路2号310室</p>
+                                    <p class="p_common">13800138000</p>
+                                    <span class="con_icon"></span>
+                                 </li>
+
+                              </ul>
+                          </div>
+                      <div class="title_box">
+                          <h2 class="tilie fl">商品信息</h2>
+                          <p class="border_b"></p>
+                      </div>
+                      <table class="table">
+                        <tr>
+                          <th width="678" class="th_first">商品</th>
+                          <th width="156">单价</th>
+                          <th width="156">数量</th>
+                          <th width="156">小计</th>
+                        </tr>
+                        <tr class="tr_second">
+                            <td >
+                               <img src="./images/01.png" width="106" height="106" class="collet_img" />
+                              <div class="info_box">
+                                   <p class="collect_info">18K金钻石手镯Dream系列Dear</p>
+                                   <p class="shop_size">
+                                     <span class="shop_name">18K、钻石</span>
+                                     <span class="">重量：12.84g</span>                                 
+                                   </p>
+                              </div>
+                                </td>
+                            <td >
+                                <em class="collect_price">￥<span class="unit">17000.00</span></em>
+                                <del>￥<span class="yunaPrice">17000.00</span></del>
+
+                            </td>
+                            <td >×<span class="num">1</span></td>                            
+                            <td >
+                                <em class="collect_price">￥<span class="s_unit">17000.00</span></em>
+                            </td>
+                        </tr>
+                        <tr class="tr_second">
+                            <td >
+                               <img src="./images/01.png" width="106" height="106" class="collet_img" />
+                              <div class="info_box">
+                                   <p class="collect_info">18K金钻石手镯Dream系列Dear</p>
+                                   <p class="shop_size">
+                                     <span class="shop_name">18K、钻石</span>
+                                     <span class="">重量：12.84g</span>                                 
+                                   </p>
+                              </div>
+                                </td>
+                            <td >
+                                <em class="collect_price">￥<span class="unit">17000.10</span></em>
+                                <del>￥<span class="yunaPrice">17000.10</span></del>
+
+                            </td>
+                            <td >×<span class="num">2</span></td>                            
+                            <td >
+                                <em class="collect_price">￥<span class="s_unit">17000.00</span></em>
+                            </td>
+                        </tr>
+
+
+                      </table>
+                      <div class="title_box">
+                          <h2 class="tilie fl">订单信息</h2>
+                          <p class="border_b"></p>
+                      </div>
+                      <div class="order_info clearfix">
+                        <div class="info_part1">
+                           <label class="label_input">
+                             <span class="span_text">订单备注</span>
+                             <input type="text" value="" placeholder="备注内容" class="input" />
+                             <span class="span_last">(选填)</span>
+                           </label>
+                           <div class="part02 clearfix">
+                              <div class="you_hui clearfix">
+                                  <div class="icon_box fl">
+                                    <span class="you_icon">&or;</span>
+                                    <span class="toggle you_icon" style="display:none;">&and;</span>
+                                  </div>
+                                <span class="use_you fl">使用优惠券</span>
+                                <span class="user_info fl" title="优惠券是仅限在汇福商城使用，按面值总额减免支付的优惠码。"></span>
+
+                              </div>
+                              <div class="youHui_box clearfix">
+                                 <label class="label_num">
+                                   <span class="text fl">优惠券号码：</span>
+                                   <input type="text" value="" class="input_num fl"/>
+                                   <input type="submit" value="确定" class="submit fl"/>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="jiexiang fr">
+                            <p class="p_style">商品总价：<span class="price1 fr">￥<em id="price1">0</em></span></p>
+                            <p class="p_style2">订单总价：<span class=" price2 fr">￥<em id="sum">0</em></span></p>
+                            <p class="p_last">免运费</p>
+                            <a href="#" class="make_treu fr">确认提交</a>
+
+                        </div>
+
+                      </div>
+                    </form>
+                    <div class="tool">
+                      <ul class="eva_ul">
+                          <li class="li_box">
+                              <img  src="./images/toop_icon01.png" width="55" height="55" class="eva_iocn">
+                              <span class="icon_text">免费配送</span>
+                          </li>
+                          <li class="li_box">
+                              <img  src="./images/toop_icon02.png" width="55" height="55" class="eva_iocn">
+                              <span class="icon_text">免费自提</span>
+                          </li>
+                          <li class="li_box">
+                              <img  src="./images/toop_icon03.png" width="55" height="55" class="eva_iocn">
+                              <span class="icon_text">线下服务</span>
+                          </li>
+                          <li class="li_box">
+                              <img  src="./images/toop_icon04.png" width="55" height="55" class="eva_iocn">
+                              <span class="icon_text">终身保养</span>
+                          </li>
+                          <li class="li_box">
+                              <img  src="./images/toop_icon05.png" width="55" height="55" class="eva_iocn">
+                              <span class="icon_text">全程保险</span>
+                          </li>
+
+                      </ul> 
+                    </div>  
+
+                  </div>
+
+
+              </div>
+               <!-- 内容  end-->
+        </div>
+    </div>
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+   
+    function aaa(){
+        //商品总价   
+        var nnum = 0 ;   
+        $('.tr_second').each(function(){
+          var num_sum = 0;
+            var num_a=parseFloat($(this).find('.yunaPrice').text());          
+           var num_b=parseFloat($(this).find('.num').text());           
+           var num_sum = num_a * num_b;
+            nnum += num_sum;
+          var  anum=(nnum.toFixed(2));
+        $("#price1").text(anum);           
+        });
+
+
+        //小计      
+        $('.tr_second').each(function(){
+          var num = 0;
+            var num_a=parseFloat($(this).find('.unit').text());
+           var num_b=parseFloat($(this).find('.num').text()); 
+            num = num_a * num_b;
+            console.log(num)
+            var num1=(num.toFixed(2));
+           $(this).find(".s_unit").text(num1);
+
+        });        
+       //订单总价
+        var num_s = 0;
+        $('.s_unit').each(function(){
+            // console.log($(this).text()) 
+            var num_l = parseFloat($(this).text());
+            num_s = num_s + num_l;
+          var  num_s1=(num_s.toFixed(2));
+
+            $("#sum ").text(num_s1);
+
+        });       
+
+      }
+
+
+    $(function () {
+        aaa();
+        $('.body_side .ul_nav a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        });
+        $('.form_box .label_box').click(function(){
+         var tab =$(this).index();
+         $('.form_box>.adress_cofirm').eq(tab).show().siblings('.adress_cofirm').hide();
+        })
+        $('.adress_ul li').click(function(){
+        $(this).addClass('active').siblings('li').removeClass('active');
+        
+        })
+        // 使用优惠券
+        $('.you_hui').click(function(){
+          $('.you_icon').toggle('.you_icon');
+          $('.youHui_box ').toggle();
+        });
+        $('.youHui_box .submit ').click(function(){
+          $(this).parents('.youHui_box').hide();
+        })
+         $('input').placeholder();        
+
+       });
+
+</script>
+</html>

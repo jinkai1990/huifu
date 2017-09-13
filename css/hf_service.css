@@ -1,0 +1,100 @@
+.service{
+	margin-top: 44px;
+}
+.service .service_ul{
+	overflow: hidden;
+	height: auto;
+	margin-right: 40px;
+	float: left;
+	width: 580px;
+}
+.service .service_ul li{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 48px;
+}
+.service .service_ul li .ser_img{
+	width: 100%;
+	height: 300px;
+	display: block;
+	overflow: hidden;
+}
+.service .service_ul li .ser_img img{
+	width: 580px;
+	height: 300px;
+}
+.service .service_ul li .ser_title{
+	font-size: 16px;
+	color: #fe4c4c;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	text-align: center;
+    display: block;
+}
+.service .service_ul li .ser_details{
+	font-size: 12px;
+	color: #000;
+	line-height: 1.8em;
+	margin: 0 150px;
+	margin-bottom: 70px;
+
+}
+.service .service_ul li.li_03{
+	margin-bottom: 0px;
+}
+.service .service_ul li.li_04{
+	margin-bottom: 0px;
+}
+.service .service_ul li.li_03 .ser_details{
+	margin-bottom: 0px;
+
+}
+.service .service_ul.ul_02 li.li_02 .ser_img{
+	width: 100%;
+	height:380px;
+}
+.service .service_ul li.li_02 .ser_img img{
+	width: 580px;
+	height: 380px;
+}
+.service .service_ul li.li_02 .ser_title{
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.service .service_ul li.li_02 .ser_details{
+	font-size: 12px;
+	color: #000;
+	line-height: 1.8em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;    
+}
+.service .service_ul li.li_04 .ser_details{
+	font-size: 12px;
+	color: #000;
+	line-height: 1.8em;
+    margin: 0 140px;
+    margin-bottom: 50px;
+}
+.service .service_ul li.li_04 .ser_title{
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.service .service_ul.ul_02{
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

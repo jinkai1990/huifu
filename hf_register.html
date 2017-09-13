@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-注册</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_login-register.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+
+</head>
+
+<body>
+   <!-- 头部 -->
+<div id="new_header"></div>
+ <!-- 头部end -->
+<!-- 跳转到登录位置 -->
+<div id="pos_reg"></div>
+<!-- 跳转到登录位置 end -->
+<div class="main clearfixd">
+    <div class="login_box">
+
+        <form action="" method="post">
+          <div class="login_in input_not">
+             <p class="phone_iocn"></p>
+             <input class="input_box mobile" type="text" name="mobile" value="" placeholder="请输入您的手机号" required="required"/>
+             <span class="error error5"></span>
+          </div>
+          <div class="login_in ">
+             <p class="pass_iocn"></p>
+             <input class="input_box password" type="password" name="new_password" value="" placeholder="请输入密码" required="required"/>
+             <span class="error error8"></span>
+          </div>
+          <div class="login_in ">
+             <p class="pass_iocn"></p>
+             <input class="input_box password" type="text" name="confirm_password" value="" placeholder="请再次输入密码" required="required"/>
+             <span class="error error8"></span>
+          </div>
+          <div class="register_in " >
+            <div class="input_content">
+              <input class="input_box input_w mobile_code" type="text" name="mobile_code" value="" placeholder="请输入手机验证码" required="required"/>
+              <span class="error error7"></span>
+            </div>
+            <input type="button" value="获取验证码" id="btnSendCode" class="img_box" onclick="sendMessage()"/>
+           </div>
+          <input type="submit" value="立即注册" class="btn">
+          <a  href="hf_login.html" class="login_now  fr">立即登录</a>
+        </form>
+    </div>
+</div>
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+  <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+  <!-- 右边固定栏 -->
+
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+$(function () {
+   $('input').placeholder();        
+})
+
+//提交表单
+$('form').submit(function () {
+    var error = "";
+    // var code = $('input[name="code"]').val();
+    var mobile_code = $('input[name="mobile_code"]').val();
+    var mobile = $('input[name="mobile"]').val();
+    var new_password = $('input[name="new_password"]').val();
+    var confirm_password = $('input[name="confirm_password"]').val();
+    if (mobile.length < 1) {
+        error += '请输入手机号码';
+    }
+     else if (mobile_code.length < 1) {
+        error += '请输入短信验证码';
+    } else if (new_password.length < 6) {
+        error += '请输入6位以上的新密码';
+    } else if (new_password !== confirm_password) {
+        error += '两次输入的密码不一致';
+    }
+    if (error) {
+        showErrorMsg(error);
+        return false;
+    }
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: $('form')[0].action,
+        data: $('form').serialize(),// 你的formid
+        success: function (data) {
+            if (data.status == 1) {
+                window.location.href = "{:U('Index/User/login')}";
+            } else {
+                showErrorMsg(data.msg);
+            }
+        }
+    });
+    return false;
+});
+//格式验证
+$(function(){
+   (function login(){
+       //手机号栏失去焦点  
+        $(".login_in .mobile").blur(function(){  
+            reg=/^[1][3,4,5,7,8][0-9]{9}$/;//验证手机正则(输入前7位至11位)  
+            //输入值为空
+            if( $(this).val()=="")  
+            {   
+                $(this).parent().addClass("errorC");  
+                $(this).next().html("请输入您的手机号");  
+                $(this).next().css("display","block");  
+            }
+            //验证手机号格式
+            else if(!(/^[1][3,4,5,7,8][0-9]{9}$/.test($(this).val())) ) 
+            {     
+                $(this).parent().addClass("errorC");  
+                $(this).next().html("手机号格式不正确！");  
+                $(this).next().css("display","block");  
+            }    
+             
+            else  
+            {  
+                $(this).parent().addClass("checkedN");  
+                $(this).removeClass("errorC");  
+                $(this).next().empty();  
+            }  
+        });  
+      /*密码输入框失去焦点*/  
+      $(".login_in .password").blur(function(){  
+          reg=/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;  
+            
+          if($(this).val() == "")
+          {  
+              $(this).parent().addClass("errorC");  
+              $(this).next().html("密码不能为空！");  
+              $(this).next().css("display","block");  
+            
+          }
+          else if(!reg.test($(".login_in .password").val()))  
+          {  
+              $(this).parent().addClass("errorC");  
+              $(this).next().html("密码为6~12位的数字、字母或特殊字符！");  
+              $(this).next().css("display","block");  
+          }else  
+          {  
+              $(this).parent().addClass("checkedN");  
+              $(this).removeClass("errorC");  
+              $(this).next().empty();  
+          }  
+      });    
+      
+      /*手机验证码为空*/ 
+      $(".register_in .mobile_code").blur(function(){
+          if($(this).val() == "")
+          {
+              $(this).addClass("errorC");  
+              $(this).next().html("验证码不能为空！");  
+              $(this).next().css("display","block");  
+          }
+          else
+          {
+              $(this).addClass("checkedN");  
+              $(this).removeClass("errorC");  
+              $(this).next().empty();
+          }
+      })
+
+     })();
+
+ })
+ function emptyLogin(){  
+      $(".login_in .mobile,.login_in .password,.register_in .input_code,.register_in .mobile_code").removeClass("errorC");;  
+      $(".login_in .error5,.login_in .error6,.register_in .error7").empty();  
+  } 
+  //获取验证码
+  var InterValObj; //timer变量，控制时间
+      var count = 30; //间隔函数，1秒执行
+      var curCount;//当前剩余秒数
+
+      function sendMessage() {
+        　curCount = count;
+      　　//设置button效果，开始计时
+           $("#btnSendCode").attr("disabled", "true");
+           $("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+           InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+      　　  //向后台发送处理数据
+           $.ajax({
+           　　type: "POST", //用POST方式传输
+           　　dataType: "text", //数据格式:JSON
+           　　url: 'Login.ashx', //目标地址
+          　　 data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,
+          　　 error: function (XMLHttpRequest, textStatus, errorThrown) { },
+           　　success: function (msg){ }
+           });
+      }
+
+      //timer处理函数
+      function SetRemainTime() {
+                  if (curCount == 0) {                
+                      window.clearInterval(InterValObj);//停止计时器
+                      $("#btnSendCode").removeAttr("disabled");//启用按钮
+                      $("#btnSendCode").val("重新发送验证码");
+                  }
+                  else {
+                      curCount--;
+                      $("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+                  }
+      }
+</script>
+</html>

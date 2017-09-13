@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-我的订单-未付款</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well  clearfix">
+        <a href="javascript:window.history.back();" class="go_back clearfix">个人中心</a>
+        <!-- 个人中心 -->
+        <div class="body_side fl">
+            <ul class="ul_nav">
+                <li class="li_01"><a href="hf_personal-center.html" class="a_style">个人中心</a></li>
+                <li  class=" active"><a href="hf_my-order-all.html" class="a_style">我的订单</a></li>
+                <li><a href="hf_my-evaluate.html" class="a_style">我的评价</a></li>
+                <li><a href="hf_my-integration.html" class="a_style">我的积分</a></li>
+                <li><a href="hf_my-collect.html" class="a_style">我的收藏</a></li>
+                <li><a href="hf_my-appointment.html" class="a_style">我的预约</a></li>
+                <li><a href="hf_convert-discount.html" class="a_style">我的优惠券</a></li>
+            </ul>
+            <ul class="ul_nav ul_nav_02">    
+                <p class="li_title">个人信息</p>
+                <li><a href="hf_information-change.html" class="a_style">资料修改</a></li>
+                <li><a href="hf_password-change.html" class="a_style">密码修改</a></li>
+                <li><a href="hf_per-address-manage.html" class="a_style">地址管理</a></li>
+  
+            </ul>
+        </div>
+        <!-- 左边主体 -->
+        <div class="body_right fr">
+            <p class="body_title">我的订单</p>
+
+            <!-- 全部订单 -->
+            <div class=" per_order">
+                <div class="order_tab">
+                    <ul class="order_ul">
+                        <li  > <a  href="hf_my-order-all.html" class="order_a">全部订单 3</a></li>
+                        <li class="active"><a  href="hf_order-noPlay.html"  class="order_a">未付款 1</a></li>
+                        <li ><a  href="hf_order-already.html"  class="order_a">已付款 1</a></li> 
+                        <li ><a  href="hf_order-finish.html"  class="order_a">已完成 1</a></li>
+                       
+                    </ul>
+                </div>
+                <table class="table_per order_table">
+                    <tr class="order_center">
+                        <th width="147">订单编号</th>
+                        <th width="145">商品信息</th>
+                        <th width="100">商品总数</th>
+                        <th width="150">订单金额</th>
+                        <th width="129">下单时间</th>
+                        <th width="115">订单状态</th>
+                        <th width="180">操作</th>
+                    </tr>
+
+                    <tr class="per_center order_trOn">
+                        <td >666666</td>
+                        <td ><img src="./images/01.png" width="106" height="106" class="t_img" /></td>
+                        <td >3件</td>
+                        <td >￥17100.00</td>
+                        <td >2017-04-01  12:00:00</td>
+                        <td ><span class="no_play  ">未付款</span></td>
+                        <td >
+                           <a href="hf_confirm-order.html" class="now_play">立即付款</a>
+                           <a href="hf_product-information.html" class="check">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr class="per_center order_trOn">
+                        <td >666666</td>
+                        <td ><img src="./images/01.png" width="106" height="106" class="t_img" /></td>
+                        <td >3件</td>
+                        <td >￥17100.00</td>
+                        <td >2017-04-01  12:00:00</td>
+                        <td ><span class="no_play  ">未付款</span></td>
+                        <td >
+                           <a href="hf_confirm-order.html" class="now_play">立即付款</a>
+                           <a href="hf_product-information.html" class="check">查看详情</a>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- 订单为空内容 -->
+                 <div class="kong_box">
+                    <p class="order_kong">您最近的订单为空，赶紧挑选合适的商品吧</p>
+                    <a href="javasrcpit:void(0)" class="find_shop">挑选商品</a>
+                </div> 
+                <!-- 订单为空内容 -->
+            </div>
+            <!-- 全部订单 -->
+
+
+        </div>
+        <!-- 左边主体 -->
+        <!-- 个人中心 -->
+    </div>
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript">
+    $(function () {
+        $('.body_side .ul_nav a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        })
+        //我的订单筛选
+        $(' .order_ul li .order_a').click(function(){
+            $(this).parent().addClass('active').siblings('li').removeClass('active');
+        })      
+    });
+
+</script>
+</html>

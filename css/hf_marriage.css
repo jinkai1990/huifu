@@ -1,0 +1,158 @@
+.banner{
+	overflow: hidden;
+	width:100%;
+	text-align: center;
+}
+.banner .banner_img{
+    width:100%;
+}
+.part{
+	overflow: hidden;
+	height: auto;
+	height: 534px;
+}
+.part .part_l{
+	overflow: hidden;
+	height: auto;
+	width: 388px;
+	text-align: center;
+	margin-top: 96px;
+}
+.part .part_l .part_title{
+	font-size: 22px;
+    color: #fe4c4c;
+    letter-spacing: 2px;
+}
+.part .part_l .part_title_c{
+	font-size: 20px;
+	color: #fe4c4c;
+}
+.part .part_l .part_info{
+	font-size: 12px;
+	color: #333;
+	width: 164px;
+    margin: 12px auto;
+} 
+.part .part_l .marry_proimg{
+	 width: 300px;
+	 height: 186px;
+	 overflow: hidden;
+	 margin: 0 auto;
+	 margin-bottom: 20px;
+}
+.part .part_l .marry_proimg img{
+	width: 100%;
+}
+.part .part_l .marriage_more{
+	font-size: 12px;
+	color: #000;
+} 
+.part .part_l .marriage_more:hover{
+	color:#fe4c4c;
+}
+.part .part_l .marriage_more .more_bottom{
+	border-bottom: 2px solid #fe4c4c;
+	width: 34px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.part_r .mar_rimg{
+	width: 812px;
+	height: 534px;
+	overflow: hidden;
+}
+.part_r .mar_rimg img{
+	width: 100%;
+}
+.mar_part03{
+	height: 437px;
+	overflow: hidden;
+}
+.mar_part03 .mar_rimg {
+    width: 812px;
+    height: 437px;
+    overflow: hidden;
+}
+.part .part_l .title_03{
+	margin-bottom: 10px;
+}
+.mar_part03 .part_l{
+	margin-top: 187px;
+}
+.part .part_l .part_title_t {
+    font-size: 20px;
+    color: #fe4c4c;
+    margin-bottom: 20px;
+}
+.mar_part04 .part_l{
+	margin-top: 72px;
+}
+.mar_part05 .part05_l{
+	width: 600px;
+	height: 394px;
+	background: url(../images/marry_bimg05.gif) center center no-repeat;
+	text-align: center;
+}
+.mar_part05 .part05_r{
+	width: 600px;
+	height: 394px;
+	background: url(../images/marry_bimg06.gif) center center no-repeat;
+	text-align: right;
+}
+.mar_part05 .part05_info{
+	font-size: 12px;
+	margin: 0px 30px;
+    text-indent: 1rem;
+    text-align: left;
+    line-height: 2em;
+}
+.mar_part05 .part05_l .part05_info{
+	color: #000;
+	margin-bottom: 80px;
+	margin-top: 130px;
+}
+.mar_part05 .part05_l .part05_details{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+}
+.mar_part05 .part05_l .part05_details:hover,
+.mar_part05 .part05_r .part05_details:hover{
+	color: #fe4c4c;
+}
+.mar_part05 .part05_r .part05_info{
+	color: #fff;
+	margin-bottom: 140px;
+    margin-top: 150px;
+	text-align: left;
+}
+.mar_part05 .part05_r .part05_details{
+	font-size: 12px;
+	color: #fff;
+	margin-right: 30px;
+}
+.mar_part06{
+	width: 100%;
+	/*height: 655px;*/
+/*	background: url(../images/marry_bimg07.gif) center center no-repeat;
+	background-size: 100%;*/
+	position: relative;
+}
+.mar_part06 .part06_img{
+	width: 100%;
+	/*height: 655px;*/
+	overflow: hidden;
+}
+.mar_part06 .part06_img img{
+	width: 100%;
+}
+.mar_part06 .part06_details{
+	position: absolute;
+	bottom: 35px;
+	right: 118px;
+	color: #fe4c4c;
+	font-size:12px;
+}
+
+
+

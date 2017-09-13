@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=10" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-预约服务</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_shop.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+   <div class="well clearfix">  
+     <p class="location clearfix"><a href="hf_service.html" class="loca_a">首页</a><a href="hf_shop.html" class="loca_a loca_last">订单详情</a>
+     </p>
+     <div class="appointment">
+       <p class="banner">
+         <img src="./images/appointment_img.gif" width="1200" height="400" alt="图片"/>
+       </p>
+       <div class="appoin_box ">
+          <h1 class="appoin_title">广州旗舰体验门店&nbsp;&nbsp;预约服务快速通道</h1>
+          <p class="app_text">无需排队即可享受专属接待&nbsp;&nbsp;&nbsp;&nbsp;到店即可领取众多奖品礼包</p>
+          <form action="">
+            <ul class="form_ul">
+                <li>
+                  <div class="select_box">
+                       <input type="text" name="" value="" class="input" placeholder="广州番禺旗舰门店"/>
+                  </div>
+                  <div class="select_box">
+                      <span class="span_t">预约内容</span>
+                      <select class="select select_s" onchange=this()>
+                          <option value="0" >清洗保养</option>
+                          <option value="1">私人定制</option>
+                          <option value="2">珠宝托卖</option>
+                          <option value="3">门店预约</option>
+                      </select>
+                  </div>
+                </li>
+            </ul>
+            <ul class="form_ul">            
+                <li>
+                <div class="select_box ">
+                    <span class="span_t">预约日期</span>
+                     <input id="d11" onClick="WdatePicker()" type="text" name="" value="" class=" Wdate input input_time" placeholder="请选择日期"/>
+
+                </div>
+                <div class="select_box ">
+                    <span class="span_t">到店时间</span>
+                     <input id="time_j" type="text" onClick="WdatePicker({dateFmt:'HH:mm'})" name="" value="" class="input input_time" placeholder="请选择到店时间"/>
+
+                </div>
+                </li>
+          </ul>
+            <ul class="form_ul">            
+                <li>
+                <div class="select_box ">
+                    <span class="span_t">客户姓名</span>
+                     <input id="time" type="text" name="" value="" class="input input_ph fl" placeholder="请输入名称"/>
+
+                </div>
+                <div class="select_box ">
+                    <span class="span_t">联系电话</span>
+                     <input id="time" type="text" name="" value="" class="input input_ph fl" placeholder="请输入手机号"/>
+
+                </div>
+                </li>
+          </ul>            
+            <ul class="form_ul">            
+                <li>
+                <div class="select_box select_last">
+                    <span class="span_t">到店时间</span>
+                     <input id="time" type="text" name="" value="" class="input " placeholder="请输入备注内容"/>
+
+                </div>
+
+                </li>
+          </ul>            
+          <input type="submit" value="立即预约" name="" class="now_apply"/>        
+          <p class="app_info">因为我们提供一对一的专属服务，如果上一位顾客接待时间超长，可能会让您稍许等候，请见谅</p>
+
+          </form>
+         
+       </div>
+     </div>
+         
+   </div>
+ 
+
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+  
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript" src="js/WdatePicker/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+         $('input, textarea').placeholder();        
+
+       });
+    
+</script>
+</html>

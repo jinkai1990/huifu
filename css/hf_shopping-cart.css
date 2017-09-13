@@ -1,0 +1,235 @@
+.shoppCart .body_title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #000;
+}
+
+.table_collect {
+    table-layout: fixed;
+}
+.collect .table_collect tr th {
+    background: #f2f2f2;
+    color: #666;
+    font-size: 12px;
+    padding: 16px 0px;
+    text-align: center;
+}
+.collect .table_collect tr.per_center td .collet_img {
+    border: 1px solid #eee;
+    width: 106px;
+    height: 106px;
+}
+.table_collect tr.per_center td .collect_info {
+    width: 120px;
+    margin-left: 14px;
+    display: inline-block;
+    line-height: 22px;
+    text-align: left;
+}
+.collect .table_collect tr.per_center td .collect_price {
+    color: #fe4c4c;
+}
+.collect .table_collect tr.per_center td .adress_btn1 {
+    display: block;
+    color: #000;
+    margin-bottom: 10px;
+}
+.collect .table_collect tr.per_center td {
+    color: #000;
+    font-size: 12px;
+    padding: 16px 0px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+.collect .table_collect tr.per_center td.collect_td_last{
+    text-align: left;
+    padding-left: 24px;
+}
+.collect .table_collect tr.shoppCart_td td{
+	padding:40px 0px 20px 0px;
+}
+.collect .table_collect tr.shoppCart_td td.shopp_td02{
+	text-align: right;
+}
+.collect .table_collect tr.shoppCart_td .collect_price{
+	color: #fe4c4c;
+}
+.collect .table_collect tr.per_center td.td_btn{
+	text-align: right;
+}
+.collect .table_collect tr.per_center td.td_btn .shopp_bnt{
+	display: inline-block;
+	color:#fff;
+	padding:10px 20px;
+	background: #fe4c4c;
+
+}
+.collect .table_collect tr td .collect_dell{
+	font-size: 12px;
+	color: #000;
+}
+.collect_success{
+	position: absolute;
+	top:150px;
+	left:461.5px;
+	display: none;
+}
+.collect_success .shopp_coll{
+	width: 260px;
+	height: 120px;
+	display: inline-block;
+	background: #f2f2f2;
+	text-align: center;
+	line-height: 120px;
+}
+.collect_success .pass_set {
+    background: url(../images/pass_set.png) left center no-repeat;
+    padding-left: 55px;
+    font-size: 12px;
+    color: #000;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+}
+.shoppCart .collect{
+	position: relative;
+}
+.dell_all .shopp_coll{
+	width: 260px;
+	height: 120px;
+	display: inline-block;
+	background: #f2f2f2;
+	text-align: center;
+	line-height: 120px;
+}
+.dell_all{
+	position: absolute;
+	top:150px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-align: center;
+	display: none;
+}
+.dell_all .shopp_dell{
+	width: 260px;
+	height: 120px;
+	display: inline-block;
+	background: #f2f2f2;
+	text-align: center;
+	z-index: 11;
+	margin-top: 230px;	
+}
+.dell_all .shopp_dell .hint{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	margin-top: 32px;
+    margin-bottom: 26px;
+}
+.dell_all .shopp_dell .btn_box{
+	display: inline-block;
+}
+.dell_all .shopp_dell .btn_box .dell_btn,
+.dell_all .shopp_dell .btn_box .dell_cancel{
+	display: inline-block;
+	padding:4px 26px;
+	font-size: 12px;
+}
+.dell_all .shopp_dell .btn_box .dell_btn{
+	background: #fe4c4c;
+	color: #fff;
+	margin-right: 20px;
+}
+.dell_all .shopp_dell .btn_box .dell_cancel{
+	background: #ccc;
+	color: #000;
+}
+.collect_kong{
+    border-bottom: 1px solid #f2f2f2;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    line-height: 38px;
+    padding: 30px 0px;
+    display: none;
+}
+.collect_kong .collect_add{
+	color: #000;
+}
+.collect_kong .collect_add:hover{
+	color:#fe4c4c;
+}
+
+ .nub{
+	font-size: 12px;
+	color: #000;
+	margin-left: 10px;
+    margin-right: 4px;
+}
+ .min,.add{
+	background: none;
+	outline: none;
+	width: 30px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	border: 1px solid #cfcfcf!important;
+}
+ .min{
+    border-right: 0!important;
+ }
+
+ .text_box{
+	background: none;
+	width: 48px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #cfcfcf!important;
+	margin-left: -4px;
+}
+ .add{
+	margin-left: -4px;
+}
+
+.shop_input{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+}
+.shop_input .checkbox_bg{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.shop_input .checkbox_on{
+	background: url(../images/shop_icon.png) center no-repeat;
+	background-size: 100%;
+}
+
+.shop_input .checkbox_off{
+	background: url(../images/shop_icon01.png) center no-repeat;
+	background-size: 100%;
+}
+
+.shop_input .checkbox{
+	width:20px;
+	height:20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+    filter:alpha(opacity=0);
+    cursor: pointer;
+}

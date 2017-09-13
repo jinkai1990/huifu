@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汇福-登陆</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_login-register.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+ 
+</head>
+
+<body>
+   <!-- 头部 -->
+<div id="new_header"></div>
+ <!-- 头部end -->
+<!-- 跳转到登录位置 -->
+<div id="pos"></div>
+<!-- 跳转到登录位置 end -->
+<div class="main clearfixd">
+  <div class="well">
+    <div class="login_box">
+        <div class="title_box">
+            <span class="title">登录</span>
+            <p class="r_register">还没有帐号？<a href="hf_register.html" class="now" >立即注册>></a></p>
+        </div>
+        <form action="" method="post">
+          <div class="login_in">
+             <p class="phone_iocn"></p>
+             <input class="input_box mobile" required="required" maxlength="11" type="text" onblur="checkMobile()" name="mobile"  value="" autocomplete="on" placeholder="请输入您的手机号"/>
+             <span class="error error5"></span>
+          </div>
+          <div class="login_in">
+            <p class="pass_iocn"></p>
+            <input class="input_box password" required="required" type="password" name="password" value="" onblur="checkPwd()"  placeholder="请输入密码"/>
+            <span class="error error6"></span> 
+           </div> 
+           <div class="forget">
+               <label class="label_inp"><input type="checkbox" value=""/>记住账号</label>
+               <a href="javasrcpit:void(0)" class="forget_pass">忘记密码？</a>
+           </div>
+           <input id="btn_reg" type="submit" value="立即登录" class="btn"/>
+        </form>
+    </div>
+</div>
+</div>
+  <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+  <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+  <!-- 右边固定栏 -->
+
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+$(function () {
+   $('input').placeholder(); 
+           
+})
+// 验证手机
+function checkMobile() {
+    var reg=/^[1][3,4,5,7,8][0-9]{9}$/;//验证手机正则(输入前7位至11位)  
+    //输入值为空
+    if( $('.mobile').val()=="")  
+    {   
+        $('.mobile').parent().addClass("errorC");  
+        $('.mobile').next().html("请输入您的手机号");  
+        $('.mobile').next().css("display","block");  
+            return false;
+    }
+    //验证手机号格式
+    else if(!(/^[1][3,4,5,7,8][0-9]{9}$/.test($('.mobile').val())) ) 
+    {     
+        $('.mobile').parent().addClass("errorC");  
+        $('.mobile').next().html("手机号格式不正确！");  
+        $('.mobile').next().css("display","block");  
+            return false;
+    }    
+     
+    else  
+    {  
+        $('.mobile').parent().addClass("checkedN");  
+        $('.mobile').removeClass("errorC");  
+        $('.mobile').next().empty();  
+            return true;
+    }  
+}
+// 验证密码
+function checkPwd() {
+
+      var reg=/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;  
+        
+      if($('.password').val() == "")
+      {  
+          $('.password').parent().addClass("errorC");  
+          $('.password').next().html("密码不能为空！");  
+          $('.password').next().css("display","block");  
+          return false;
+        
+      }
+      else if(!reg.test($(".login_in .password").val()))  
+      {  
+          $('.password').parent().addClass("errorC");  
+          $('.password').next().html("密码为6~12位的数字、字母或特殊字符！");  
+          $('.password').next().css("display","block");  
+          return false;
+      }else  
+      {  
+          $('.password').parent().addClass("checkedN");  
+          $('.password').removeClass("errorC");  
+          $('.password').next().empty();  
+          return true;
+      }  
+}
+   function emptyLogin(){  
+        $(".login_in .mobile,.login_in .password").removeClass("errorC");;  
+        $(".login_in .error5,.login_in .error6").empty();  
+    }
+
+//提交表单
+$('form').submit(function () {
+    var error = "";
+    // var code = $('input[name="code"]').val();
+    var mobile = $('input[name="mobile"]').val();
+    var password = $('input[name="password"]').val();
+    // var confirm_password = $('input[name="confirm_password"]').val();
+    if (mobile.length < 1) {
+        error += '请输入手机号码';
+    } 
+    // else if (code.length < 1) {
+    //     error += '请输入短信验证码';
+    // }
+     else if (password.length < 6) {
+        error += '请输入6位以上的新密码';
+    } 
+    // else if (new_password !== confirm_password) {
+    //     error += '两次输入的密码不一致';
+    // }
+    if (error) {
+        showErrorMsg(error);
+        return false;
+    }
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: $('form')[0].action,
+        data: $('form').serialize(),// 你的formid
+        success: function (data) {
+            if (data.status == 1) {
+                window.location.href = "{window.history.back(-1);}";
+            } else {
+                showErrorMsg(data.msg);
+            }
+        }
+    });
+    return false;
+}); 
+</script>
+</html>

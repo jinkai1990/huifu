@@ -1,0 +1,453 @@
+/*联系我们*/
+.relation{
+	margin-top: 30px;
+	overflow: hidden;
+	height: auto;
+}
+.relation .img_box img{
+	width: 1200px;
+	height: 674px;
+	
+}
+.relation_way{
+	overflow: hidden;
+	height: auto;
+
+}
+.relation_way .relation_ul{
+	margin-left: 320px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+.relation_way .relation_ul li{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 10px;
+	float: left;
+	width: 436px;
+}
+.map{
+	overflow: hidden;
+}
+.map img{
+	width: 1200px;
+    height: 624px;
+}
+
+/*联系我们*/
+/*品牌*/
+.brand_banner{
+	width: 100%;
+	position: relative;
+}
+.brand_banner img{
+	width: 100%;
+	height: auto;
+}
+.brand_banner .find_a{
+	font-size: 14px;
+	color: #fe4c4c;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 36.5%;
+    top: 52%;
+}
+.brand_part1{
+	background: #f8f8f8;
+	overflow: hidden;
+/*	height: 308px;*/
+	margin-bottom: 46px;
+}
+.brand_last{
+	margin-bottom: 0px;
+}
+.brand_part1 .text_box{
+	width: 790px;
+	overflow: hidden;
+}
+.brand_part1 .text_box .title_brand,
+.brand_part1 .text_box .title_s{
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.brand_part1 .text_box .title_brand{
+	margin-top: 56px;
+    margin-bottom: 2px;
+}
+.brand_part1 .text_box .title_s{
+    margin-bottom: 10px;
+}
+.brand_part1 .text_box .text{
+	font-size: 12px;
+	color: #666;
+	margin:  0 40px;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.brand_part1 .bra_box{
+	overflow: hidden;
+	width: 410px;
+	height: 308px;
+}
+.brand_part1 .bra_box img{
+	width: 100%;
+	height: 100%;
+}
+.brand_part1 .text_box .title_last{
+	margin-top: 20px;
+}
+.brand_part1 .text_box .text_last{
+	line-height: 20px;
+}
+
+/*品牌*/
+
+/*门店*/
+.shop_part01{
+	overflow: hidden;
+	height: 550px;
+	background: #ffeded;
+}
+.shop_part01 .shop_l{
+	width: 730px;
+	height: 550px;
+	overflow: hidden;
+}
+.shop_part01 .shop_l img{
+	width: 100%;
+	height: 100%;
+}
+.shop_part01 .shop_r{
+	width: 470px;
+	height:550px;
+	overflow: hidden;
+	text-align: center;
+}
+.shop_part01 .shop_r .shop_title{
+	font-size: 16px;
+	color: #000;
+	margin-top: 87px;
+	margin-bottom: 26px;
+	letter-spacing: 2px;
+}
+.shop_part01 .shop_r .shop_text{
+	font-size: 12px;
+	color: #666;
+}
+.shop_part01 .shop_r .now{
+	font-size: 12px;
+	color: #fe4c4c;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 67px;
+}
+.shop_part01 .shop_r .img_box{
+	width: 168px;
+	height: 184px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.shop_part01 .shop_r .img_box img{
+	width: 100%;
+}
+.part_common{
+	margin-bottom: 25px;
+}
+.shop_part02{
+	width: 1200px;
+	height: 554px;
+	overflow: hidden;
+}
+.shop_part02 img{
+	width: 100%;
+	height: 100%;
+}
+.shop_part03{
+	width: 1220px;
+	height: 530px;
+    overflow: hidden;
+}
+.shop_part03 .shop_l{
+	width: 600px;
+	height: 100%;
+	overflow: hidden;
+}
+.shop_part03 .shop_l .box_l{
+	width: 100%;
+	height: 178.68px;
+	float: left;
+	background: #fafafa;
+	border-bottom: 1px solid #f2f2f2;
+
+}
+.shop_part03 .shop_l .box_l.active{
+	background: #ffeded;
+}
+.shop_part03 .shop_l .box_l.active .shop_title03{
+	color: #fe4c4c;
+}
+.shop_part03 .shop_l .box_l .shop_title03{
+	font-size: 16px;
+	color: #000;
+	margin-left: 88px;
+	margin-top: 54px;
+	margin-bottom: 15px;
+}
+.shop_part03 .shop_l .box_l .shop_text{
+	font-size: 12px;
+	color: #666;
+	margin-left: 88px;
+	line-height: 20px;
+
+}
+.shop_part03 .shop_r{
+	width: 600px;
+	height: 530px;
+	overflow: hidden;
+}
+.shop_part03 .shop_r img{
+	width: 100%;
+	height: 100%;
+}
+/*门店 end*/
+/*预约服务*/
+.appointment{
+	overflow: hidden;
+	height: auto;
+	background: #ffeded;
+}
+.appointment .banner{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+.appointment .banner img{
+	width: 100%;
+	height: 100%;
+}
+.appoin_box{
+	background: #ffeded;
+	height: auto;
+	overflow: hidden;
+}
+.appointment .appoin_box .appoin_title{
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 60px;
+	margin-bottom: 6px;
+}
+.appointment .appoin_box .app_text{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 46px;
+}
+.appointment .appoin_box .select_box {
+    background: #fff;
+    width: 374px;
+    height: 32px;
+    /*margin: 0 auto;*/
+    margin-bottom: 16px;
+    margin: 0 10px;
+    float: left;
+}
+.appointment .appoin_box .form_ul{
+	text-align: center;
+}
+.appointment .appoin_box .form_ul li{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.appointment .appoin_box .select_box .span_t {
+    font-size: 14px;
+    color: #999;
+    line-height: 32px;
+    text-indent: 18px;
+    display: inline-block;
+    margin-right: 18px;
+    float: left;
+}
+.appointment .appoin_box .select_last{
+	width: 768px;
+}
+.appointment .appoin_box .select_box.select_last .input{
+	width: 87.6%;
+}
+.appointment .appoin_box .select_box .input {
+    height: 32px;
+    font-size: 12px;
+    color: #000;
+    line-height: 32px;
+    width: 91%;
+}
+.appointment .appoin_box .select_box .input_time{
+	width:278px;
+	background: url(../images/secet_icon.png) 264px center no-repeat;
+
+}
+.appointment .appoin_box .select_box .input_ph{
+	width: 200px;
+}
+.appointment .appoin_box  .select_box .select {
+	width: 291px;
+    height: 32px;
+    border: 0;
+    font-size: 12px;
+    color: #000;
+    display: inline-block;
+    float: left;
+    line-height: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/secet_icon.png) 275px center no-repeat;
+    padding-left: 10px;
+    margin-left: -9px;
+}
+.appointment .appoin_box  .select_box .select option{
+	padding-left: 10px;
+}
+.appointment .appoin_box  .select_box .select_s{
+	color: #000;
+}
+.appointment .appoin_box .now_apply {
+    font-size: 12px;
+    color: #fff;
+    background: #fe4c4c;
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 40px;
+    display: block;
+}
+.appointment .appoin_box .app_info{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #000; 
+font-size: 12px;
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #000; 
+font-size: 12px;
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #000; 
+font-size: 12px;
+} 
+input::-webkit-input-placeholder{ 
+color: #000; 
+font-size: 12px;
+} 
+input:-moz-placeholder{ 
+color: #000; 
+font-size: 12px;
+} 
+/*预约服务 end*/
+/*私人定制 */
+.made{
+	overflow: hidden;
+	height:868px;
+	background: #fff2f0;
+	margin-bottom: 64px; 
+	position: relative;
+}
+.made .made_part01{
+	height: 640px;
+	overflow: hidden;
+	position: relative;
+
+}
+.made .made_part01 .made_img{
+	height: 640px;
+	width: 444px;
+	overflow: hidden;
+}
+.made .made_part01 .made_img img{
+	width: 100%;
+	height: 100%;
+}
+.made .made_part01 .name_box{
+	overflow: hidden;
+	width: 204px;
+	border-bottom: 1px solid #000;
+	z-index: 1;
+	position: absolute;
+	top: 200px;
+	left:410px;
+	padding-left: 20px;
+}
+.made .made_part01 .name_box .name{
+	font-size: 16px;
+	color: #000;
+	font-family: Tahoma;
+	margin-bottom: 16px;
+	letter-spacing: 2px;
+}
+.made .made_part01 .name_box .job{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.made .made_part02{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 634px;
+}
+.made .made_part02 .name_box{
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 0px;
+	top: 455px;
+	left:0px;
+}
+.made .made_imgbox1{
+	position: absolute;
+	top: 0px;
+	left: 510px;
+	width: 351px;
+	height: 351px;
+	overflow: hidden;
+}
+.made .made_imgbox1 img{
+	width:100%;
+	height: 100%;
+}
+.made .made_imgbox2{
+	position: absolute;
+	bottom: 124px;
+    left: 362px;
+	width: 168px;
+	height: 184px;
+	overflow: hidden;
+}	
+.made .made_imgbox2 img{
+	width:100%;
+	height: 100%;
+}
+
+
+
+/*私人定制 end*/
+
+
+
+
+
+
+

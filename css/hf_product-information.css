@@ -1,0 +1,473 @@
+/*----图片放大样式-----*/
+.preview{width: 737px; height:600px;float: left;}
+
+/* smallImg */
+
+.smallImg{position:relative; height:auto; margin-top:1px; width:128px; overflow:hidden;float:left;}
+
+#imageMenu {height:auto; width:128px; overflow:hidden; margin-left:0; float:left;}
+
+#imageMenu li {height:128px; width:128px; overflow:hidden; float:left; text-align:center;margin-bottom: 10px;}
+
+#imageMenu li img{width:126px; height:126px;cursor:pointer;border: 1px solid #c9c9c9;}
+
+#imageMenu li#onlickImg img, #imageMenu li:hover img{ width:126px; height:126px; border:1px solid #fe4c4c;}
+
+/* bigImg */
+
+.bigImg{position:relative; float:right; width:598px; height:598px; overflow:hidden;border: 1px solid #c9c9c9;    margin-left: 9px;}
+
+.bigImg #midimg{width:598px; height:598px;}
+
+.bigImg #winSelector{width:235px; height:210px;}
+
+#winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff;}
+
+/* bigView */
+
+#bigView{position:absolute;border: 1px solid #959595; overflow: hidden; z-index:999;}
+
+#bigView img{position:absolute;}
+
+/*----图片放大样式-----*/
+.go_back{
+	font-size: 14px;
+	color: #000;
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	background: url(../images/go_back_icon.png) left center no-repeat;
+	padding-left: 40px;
+	margin: 15px 0;
+}
+.information{
+	margin-left: 40px;
+	width: 422px;
+}
+.information .name{
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+    margin-top: -5px;
+}
+.information .title{
+	font-size: 14px;
+	color: #333;
+	letter-spacing: 2px;
+	margin-bottom: 16px;		
+}
+.information .info_box{
+	overflow: hidden;
+	height: auto;
+	width: 298px;
+}
+.information .info_box li{
+	height: 34px;
+	line-height: 34px;
+	color: #333;
+	font-size: 12px;
+	background: #f5f5f5;
+}
+.information .info_box li:nth-child(2n){
+	background: #fff;
+}
+.information .info_box li span{
+	width: 50%;
+	display: inline-block;
+}
+.information .info_box li .details01{
+	text-indent: 26px;
+}
+.information .price_box{
+	margin-top: 24px;
+	overflow: hidden;
+	width: 100%
+}
+.information .price_box .ul_price{
+	background: #fafafa;
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 6px;
+}
+.information .price_box .ul_price li{
+   padding-bottom: 9px;
+}
+.information .price_box .ul_price li .span_box{
+	font-size: 12px;
+	color: #333;
+	text-indent: 26px;
+	display: inline-block;
+	margin-right: 32px;
+}
+.price_box .ul_price li  .price{
+	font-size: 12px;
+	color: #fe4c4c;
+}
+.price_box .ul_price li .price em{
+	font-size: 16px;
+}
+.price_box .ul_price li .price_del del{
+	color: #999;
+}
+.price_box .ul_price li .collect{
+	color: #fe4c4c;
+	font-size: 12px;
+	background: url(../images/red_xing.png) left center no-repeat;
+	height: 14px;
+    display: inline-block;
+    padding-left: 20px;
+    background-size: 24%;
+    cursor:pointer;
+}
+.price_box .ul_price li .collect1{
+	color: #333;
+	font-size: 12px;
+	background: url(../images/grey_xing.png) left center no-repeat;
+	height: 14px;
+    display: inline-block;
+    padding-left: 20px;
+    background-size: 34%;
+    cursor:pointer;
+
+}
+.information .form_box{
+	overflow: hidden;
+	height: auto;
+	margin-top: 20px;
+}
+.information .form_box .nub{
+	font-size: 12px;
+	color: #000;
+	margin-left: 20px;
+    margin-right: 30px;
+}
+.information .form_box .min,.information .form_box .add{
+	background: none;
+	outline: none;
+	width: 30px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	border: 1px solid #cfcfcf;
+}
+.information .form_box .text_box{
+	background: none;
+	width: 48px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #cfcfcf;
+	margin-left: -4px;
+}
+.information .form_box .add{
+	margin-left: -4px;
+}
+.information .btn{
+	width: 178px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	border:1px solid #fe4c4c;
+	display: block;
+	float: left;
+	margin-top: 31px;
+}
+.information .buy{
+	color: #fff;
+	background: #fe4c4c;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.information .addCart{
+	color: #fe4c4c;
+	background: #fff;
+}
+
+/*--------------------------*/
+.pro_details{
+	overflow: hidden;
+	height: auto;
+	width: 1034px;
+	margin: 0 auto;
+
+}
+.pro_details .part{
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+}
+.marign_t62{
+	margin-top:62px;	
+}
+.pro_details .title{
+	padding-bottom: 10px;
+	border-bottom: 1px #b2aba6 dashed;
+	overflow: hidden;
+	margin-top: 38px;
+}
+.pro_details .title .text{
+	float: left;
+	border-left: 13px solid #fe4c4c;
+	padding-left: 10px;
+    font-size: 28px;
+    color: #333;
+    line-height: 29px;
+    height: 28px;
+    letter-spacing: 2px;
+}
+.pro_details .title .s_show{
+	float: left;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 4px;
+}
+.pro_details .explain{
+	font-size: 12px;
+	color: #666;
+	text-indent: 2em;
+	line-height: 1.8em;
+	margin: 18px 0;
+}
+.pro_details .explain_last{
+	margin-bottom: 0px;
+}
+.pro_details .explain em{
+	font-size: 14px;
+	color: #333;
+}
+.pro_details .img_box{
+	width: 884px;
+	height: 884px;
+	overflow: hidden;
+	margin:0 auto;
+	margin-top: 27px;
+}
+
+.pro_details .img_box img{
+	width: 100%;
+}
+.part .klow{
+	overflow: hidden;
+	height: auto;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 40px;
+}
+.part .klow.margin-bno{
+	margin-bottom: 0;
+}
+.part .klow .img_box_k{
+	width: 315px;
+	height: 398px;
+	overflow: hidden;
+	margin-right: 55px;
+}
+.part .klow_box {
+	width: 664px;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+.part .klow_box .klow_title{
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	background: #f8f8f8;
+	padding:6px 38px;
+	display: inline-block;
+	margin-bottom: 45px;
+	margin-top: 70px;
+	letter-spacing: 2px;
+}
+.part .klow_ul{
+	overflow: hidden;
+	list-style-position:outside;
+}
+.part .klow_ul li{
+	color: #333;
+	font-size: 12px;
+	line-height: 1.8em;
+	text-align: left;
+}
+.pro_details .img_box_b{
+	height: 477px;
+}
+.part_last .introduce{
+	color: #333;
+    font-size: 12px;
+    line-height: 1.8em;
+    text-indent: 2em;
+    width: 884px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.part_last .evaluate_box{
+	overflow: hidden;
+	height: auto;
+	margin-top: 30px;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+}
+.part_last .evaluate_box .eva_title{
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 56px;
+	margin-top: 22px;
+}
+.part_last .evaluate_box .big_box{
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	background: #f2f2f2;	
+}
+.part_last .evaluate_box .evaluat{
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	padding-top:25px;
+}
+.part_last .evaluate_box .evaluat .touxiang{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-right: 25px;
+	margin-left: 25px;
+	float: left;
+}
+.part_last .evaluate_box .evaluat .touxiang img{
+	width: 100%;
+}
+.part_last .evaluate_box .evaluat .eva_conntent{
+	width: 909px;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 27px;
+	margin-right:25px; 
+}
+ .evaluate_box .evaluat .eva_conntent .eva_name{
+ 	font-size: 14px;
+ 	color: #666;
+	margin-bottom: 6px;
+
+ }
+.evaluate_box .evaluat .eva_conntent .eva_name .eva_time{
+	margin-left: 20px;
+}
+.evaluate_box .evaluat .eva_conntent .eva_name .eva_xing{
+	float: right;
+	display: block;
+	background: url(../images/xing_fa.png) left -111px no-repeat;
+    height: 21px;
+    width: 95px;
+    background-size: 100%;
+}
+.evaluate_box .evaluat .eva_conntent .eva_text{
+	overflow: hidden;
+	height: auto;
+}
+.evaluate_box .evaluat .eva_conntent .eva_text .text{
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+	line-height: 1.8em;
+	margin-bottom: 10px;
+}
+.evaluate_box .evaluat .eva_conntent .xiatu{
+	font-size: 14px;
+	color: #999;
+	float: left;
+	line-height: 16px;
+}
+.evaluate_box .evaluat .eva_conntent .eva_text .s_img{
+	width: 108px;
+	height: 108px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+.eva_btn{
+	margin: 26px auto;
+	display: block;
+	width: 128px;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	background: #fe4c4c;
+}
+.evaluate_box .eva_ul{
+	overflow: hidden;
+	height: auto;
+	padding:40px 0px;
+}
+.evaluate_box .eva_ul .li_box{
+	float: left;
+	width: 134px;
+	height: 55px;
+	line-height: 55px;
+	margin:0px 36.4px;
+}
+.evaluate_box .eva_ul .li_box .icon_text{
+	font-size: 12px;
+	color: #333;
+	margin-left: 20px;
+}
+
+/*规格*/
+.information .info_box li .ul-size{
+    margin-left: -16px;
+}
+.information .info_box li .ul-size li.size-content{
+	float: left;
+	background: #fff;
+    width: 54px;
+	border: 1px solid #dedede;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	cursor: pointer;
+    margin-left: 16px;
+    position: relative;
+}
+.information .info_box li .ul-size li.size-content.active{
+    border: 1px solid #fe4c4c;
+    color: #fe4c4c;
+}
+
+.information .info_box li .ul-size li.size-content.active .icon_on{
+	display: inline-block;
+    background: url(../images/confir_icon.png) center center no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.item-last{
+	margin-top: 10px;
+}
+
+.ul-size .size-content .radio{
+	width: 54px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}

@@ -1,0 +1,188 @@
+/*登陆 注册*/
+.main{
+	background: url(../images/login_bg.png) center center no-repeat;
+	height: 694px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.main .login_box{
+	overflow: hidden;
+	height: auto;
+	background: #fff;
+	border: 1px solid #e3e2e2;
+	padding: 30px 15px 45px 15px;
+	width: 330px;
+	position: absolute;
+    right: 100px;
+    top: 161px;
+}
+.main .login_box .title_box{
+	overflow: hidden;
+    height: 27px;
+    line-height: 27px;
+	width: 100%;
+	border-bottom: 1px solid #e3e2e2;
+    padding-bottom: 20px;
+}
+.main .login_box .title_box .title{
+	float: left;
+	font-size: 16px;
+	color: #666;
+}
+.main .login_box .title_box .r_register{
+	float: right;
+	color: #fe4c4c;
+	font-size: 14px;
+}
+.main .login_box .title_box .now{
+	color: #fe4c4c;
+	font-size: 14px;	
+}
+.main .login_box .title_box .now:hover{
+	text-decoration: underline;
+}
+.main .login_box .login_in{
+	border: 1px solid #e3e2e2;
+	width: 326px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 24px;
+	font-size: 16px;
+	color: #333;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+.main .login_box .login_in .phone_iocn,
+.main .login_box .login_in .pass_iocn{
+	width: 36px;
+	height: 40px;
+	float: left;
+}
+.main .login_box .login_in .phone_iocn{
+	background: url(../images/phone_icon.png) center center no-repeat;
+	background-size: 86%;
+}
+.main .login_box .login_in .pass_iocn{
+	background: url(../images/password_icon.png) center center no-repeat;
+	background-size: 70%;
+}
+.main .login_box .login_in .input_box{
+	height: 100%;
+	line-height: 38px;
+	width: 268px;
+	float: left;
+	font-size: 12px;
+}
+.main .login_box .forget{
+	overflow: hidden;
+	height: auto;
+	margin-top: 13px;
+	margin-bottom: 33px;
+	float: left;
+    width: 100%;
+}
+.main .login_box .forget .label_inp{
+	color: #fe4c4c;
+	font-size: 12px;
+	float: left;
+	position: relative;
+	text-indent: 22px;
+}
+.main .login_box .forget .label_inp input{
+	position: absolute;
+	top:2.4px;
+	left: 0px;
+}
+.main .login_box .forget .forget_pass{
+	color: #fe4c4c;
+	font-size: 12px;
+	float: right;
+}
+
+.main .login_box .btn{
+	width: 330px;
+	height: 46px;
+	line-height: 46px!important;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background: #fe4c4c;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border:0;	
+}
+/*-------*/
+.main .login_box .login_in.input_not{
+	margin-top: 0px;
+}
+.main .login_box .register_in {
+    width: 330px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 24px;
+
+}
+.main .login_box .register_in .input_w{
+	padding-left: 10px;
+	padding-right: 10px;	
+	width: 162px;
+	border: 1px solid #e3e2e2;
+	color: #333;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-size: 12px;
+    height: 100%;
+    float: left;
+
+}
+.main .login_box .register_in .img_box{
+	float: right;
+	width: 110px;
+	height: 40px;
+	display: block;
+	font-size: 12px;
+	color: #fe4c4c;
+	background: none;
+}
+.main .login_box .register_in .img_box img{
+	width: 100%;
+}
+
+/*登陆注册验证*/
+.login_box .login_in.errorC,
+.main .login_box .register_in .input_w.errorC,
+.errorC{ 
+   	border: 1px solid red;
+}  
+  
+.login_box .login_in.checkedN ,.checkedN{
+	 border: 1px solid #e3e2e2;
+  }  
+.error {
+	clear: both;
+	display: block;
+	color: red;
+	padding-top: 2px;
+	height: 20px;
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+/*********/
+.input_content{
+	overflow: hidden;
+    height: 62px;
+    float: left;
+}
+.main .login_box .input_content .mobile_code{
+	height: 40px;
+}
+
+.login_now{
+	color: #fe4c4c;
+	margin-top: 10px;
+}

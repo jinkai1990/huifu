@@ -1,0 +1,426 @@
+.banner {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.banner .banner_img {
+    width: 100%;
+}
+/*轮播*/
+.activity_title{
+	color: #fe4c4c;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 28px;
+	margin-bottom: 32px;
+	letter-spacing: 2px;
+}
+.slideBox {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.slideBox .hd {
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+}
+.slideBox .hd li {
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 6px;
+    background: url(../images/grey_icon.png) center center no-repeat;
+    height: 14px;
+    width: 14px;
+}
+.slideBox .hd li.on {
+    background: url(../images/on_icon.png) center center no-repeat;
+    height: 14px;
+    width: 14px;
+}
+.slideBox .acti_ul .li_box{
+	width: 335px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+}
+.slideBox .acti_ul .li_box .part1_box{
+	width: 100%;
+	height: 368px;
+	margin-bottom: 15px;
+	display: block;
+}
+.slideBox .acti_ul .li_box .part1_box img{
+	width: 100%;
+	height: 100%;
+}
+.slideBox .acti_ul li .part1_mid{
+	display: block;
+	float: left;
+	width: 500px;
+	height: 750px;
+	overflow: hidden;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.slideBox .acti_ul li .part1_mid img{
+	width: 100%;
+	height: 100%;
+}
+.slideBox .acti_ul .li_box03{
+	margin-right: 0px;
+}
+/*轮播*/
+/*立即抢购*/
+.part2{
+	background: #ffeded;
+	overflow: hidden;
+}
+.part2 .rush_now{
+	overflow: hidden;
+	height: auto;
+	width: 1206px;
+	margin: 60px auto;
+}
+.part2 .rush_now li{
+    width: 396px;
+    float: left;
+    margin-right: 6px;
+    background: #fff;
+    margin-bottom: 6px;
+}
+.part2 .rush_now li .rush_img{
+	width: 100%;
+	height: 278px;
+	overflow: hidden;
+	text-align: center;
+}
+.part2 .rush_now .price_box{
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+.part2 .rush_now .price_box .price_f{
+	font-size: 12px;
+	color: #a6734d;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+.part2 .rush_now .price_box .price_s{
+	font-size: 16px;
+	color: #a6734d;
+	margin: 0 auto;
+    min-width: 158px;
+    display: inline-block;
+    position: relative;
+	
+}
+.part2 .rush_now .price_box .price_s .price_icon{
+	color: #fe4c4c;
+}
+.part2 .rush_now .price_box .price_s .price_num{
+	color: #fe4c4c;
+	font-size: 40px;
+}
+.part2 .rush_now .price_box .rush_nowa{
+	display:block;
+    width: 158px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+	background: #fe4c4c;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 6px;
+	margin-bottom: 40px;
+}
+.part2 .rush_now .price_box .rush_nowa .span_a{
+	background: url(../images/more_icon.png) #fe4c4c 100px center no-repeat;
+	height: 38px;
+    width: 142px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*立即抢购*/
+/*活动展示*/
+.activi_show{
+	color: #fe4c4c;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+.activi_box{
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+.activi_box .pimg_Box{
+	width: 100%;
+	height: 628px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	display: block;
+}
+.activi_box .pimg_Box img{
+	width: 100%;
+	height: 100%;
+}
+.activi_box .act_show_more{
+	color: #fe4c4c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    display: inline-block;	
+}
+.old_active{
+	overflow: hidden;
+	height: auto;
+}
+.old_active .old_title{
+	font-size: 16px;
+	color: #000;
+	margin: 28px 0;
+	text-align: center;
+}
+.old_active .old_ul{
+	overflow: hidden;
+	height: auto;
+    margin-right: -12px;	
+}
+.old_active .old_ul li{
+	float: left;
+	margin-right: 12px;
+	width: 392px;
+	height: 332px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.old_active .old_ul li img{
+	width: 100%;
+	height: 100%;
+}
+
+/*活动展示 end*/
+
+/*---以下是活动详情页面----*/
+.activ_cotent{
+	overflow: hidden;
+	height: auto;
+	border-bottom: 1px solid #000;
+}
+.activ_cotent .cotent_img{
+	width: 100%;
+	height: 628px;
+	overflow: hidden;
+	display: block;
+}
+.activ_cotent .cotent_img img{
+	widows: 100%;
+	height: 100%;
+}
+.activ_cotent .ac_details1,
+.activ_cotent .ac_details2{
+	overflow: hidden;
+	height: auto;	
+}
+.activ_cotent .ac_details1 .activ_title{
+	font-size: 16px;
+	color: #000;
+	margin-top: 16px;
+    margin-bottom: 8px;
+}
+.activ_cotent .ac_details1 .detials_ul li{
+	font-size: 14px;
+	color: #000;
+	text-indent: 2em;
+	margin-bottom: 4px;
+}
+.act_details2 .activ_title,
+.act_details3 .activ_title{
+	font-size: 16px;
+	color: #fe4c4c;
+	margin: 28px 0px;
+	text-align: center;
+}
+.act_details2 .apply_bg{
+	background: url(../images/activity_img17.gif) center center no-repeat;
+	width: 1200px;
+	height: 534px;
+}
+.act_details2 .apply_bg .apply_box{
+	width: 646px;
+	height: 470px;
+	float: right;
+	margin: 32px 0px;
+	background: #ffeded;
+}
+.act_details2 .apply_bg .apply_box .apply_title{
+	text-align: center;
+	color: #000;
+	font-size: 26px;
+	letter-spacing: 2px;
+	margin-top: 90px;
+	margin-bottom: 20px;
+}
+.act_details2 .apply_bg .apply_box .apply_s{
+	font-size: 16px;
+	color: #000;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 32px;
+}
+.act_details2 .apply_bg .select_box{
+	background: #fff;
+	width: 374px;
+	height: 32px;
+	margin: 0 auto;
+    margin-bottom: 16px;
+}
+.act_details2 .apply_bg .select_box .span_t{
+	font-size: 14px;
+	color: #999;
+	line-height:32px;
+	text-indent: 18px;
+	display: inline-block;
+	margin-right: 18px;
+	float: left;
+}
+.act_details2 .apply_bg .select_box .select{
+	width: 278px;
+    height: 32px;
+    border: 0;
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    float: right;
+   line-height:32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    background:none;
+    background: url(../images/secet_icon.png) 260px center no-repeat ;
+
+}
+.act_details2 .apply_bg .select_box .select option{
+/*	line-height: 50px;
+	 height: 32px;*/
+	 padding-top: 0px;
+
+}
+
+.act_details2 .apply_bg .select_box .input{
+	height: 32px;
+	font-size: 16px;
+	color: #000;
+	line-height: 32px;
+	width: 260px;
+}
+.act_details2 .apply_bg .now_apply{
+    font-size: 14px;
+    color: #fff;
+    background: #fe4c4c;
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #000; 
+font-size: 16px;
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #000; 
+font-size: 16px;
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #000; 
+font-size: 16px;
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #000; 
+font-size: 16px;
+} 
+input::-webkit-input-placeholder{ 
+color: #000; 
+font-size: 16px;
+} 
+input:-moz-placeholder{ 
+color: #000; 
+font-size: 16px;
+} 
+.de_message{
+	width: 1058px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.de_message .message_box {
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 10px;
+}
+.de_message .message_box .label_common {
+    font-size: 12px;
+    color: #000;
+}
+.de_message .message_box .label_common .span_box {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    cursor: default;
+}
+.de_message .message_box .label_common .input_box {
+    border: 1px solid #ccc;
+    width:370px;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 8px;
+    font-size: 12px;
+    color: #333;
+    margin-left: 30px;
+}
+.de_message .message_box .textarea_box{
+	width: 912px;
+	height: 90px;
+	padding:10px;
+	margin-left: 30px;
+	border: 1px solid #ccc;
+}
+.de_message .btn_box{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 56px;
+}
+.de_message .btn_box .bnt{
+	width: 128px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+}
+.de_message .btn_box .submit{
+	color: #fff;
+	background: #fe4c4c;
+	margin-right: 28px;
+}
+.de_message .btn_box .reset{
+	color: #000;
+	background: #ccc;
+	display: inline-block;
+	outline: none;
+	border: 0;
+}
+
+
+
+/*---以下是活动详情页面----*/

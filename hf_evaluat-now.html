@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>汇福-立即评价</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hf_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript">var header_index = 0;</script>
+    <script type="text/javascript" src="js/hf-header_footer.js"></script>
+    <script type="text/javascript" src="js/getarea.js"></script>    
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header"></div>
+    <!-- 头部end -->
+    <!-- 主体 -->
+<div class="well  clearfix">
+    <a href="javascript:window.history.back();" class="go_back clearfix">个人中心</a>
+    <!-- 个人中心 -->
+    <div class="body_side fl">
+            <ul class="ul_nav">
+                <li class="li_01"><a href="hf_personal-center.html" class="a_style">个人中心</a></li>
+                <li><a href="hf_my-order-all.html" class="a_style">我的订单</a></li>
+                <li  class=" active"><a href="hf_my-evaluate.html" class="a_style">我的评价</a></li>
+                <li><a href="hf_my-integration.html" class="a_style">我的积分</a></li>
+                <li><a href="hf_my-collect.html" class="a_style">我的收藏</a></li>
+                <li><a href="hf_my-appointment.html" class="a_style">我的预约</a></li>
+                <li><a href="hf_convert-discount.html" class="a_style">我的优惠券</a></li>
+            </ul>
+            <ul class="ul_nav ul_nav_02">    
+                <p class="li_title">个人信息</p>
+                <li><a href="hf_information-change.html" class="a_style">资料修改</a></li>
+                <li><a href="hf_password-change.html" class="a_style">密码修改</a></li>
+                <li ><a href="hf_per-address-manage.html" class="a_style">地址管理</a></li>
+  
+            </ul>
+        </div>
+        <!-- 左边主体 -->
+        <div class="body_right fr">
+            <p class="body_title">我的评价</p>
+            <form action="" class="form-evaluate">
+              <div id="star">
+                  <span>星级评分</span>
+                  <ul>
+                    <li><a href="javascript:;">1</a></li>
+
+                    <li><a href="javascript:;">2</a></li>
+
+                    <li><a href="javascript:;">3</a></li>
+
+                    <li><a href="javascript:;">4</a></li>
+
+                    <li><a href="javascript:;">5</a></li>
+                  </ul>
+                  <span></span>
+                  <p></p>
+              </div>
+
+                <textarea name="evaluate" class="evaluate-text" required oninvalid="setCustomValidity('请输入您的评价');" oninput="setCustomValidity('');" cols="100" rows="16" placeholder="请输入您的评价......"></textarea>
+                <div>
+                    <input type="submit"  value="提交" id="btn_reg" class="evaluateSave"/>
+                </div
+            </form>
+        </div>
+</div>
+ <!-- 底部 -->
+  <div id="footer"></div>
+  <!-- 底部  end-->
+    <!-- 右边固定栏 -->
+  <div id="izl_rmenu" class="izl_rmenu"></div>
+
+    <!-- 右边固定栏 -->
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+//提交表单
+  $('form').submit(function  () {
+    var error = " ";
+    var evaluate = $('textarea[name="evaluate"]').val();
+    if (evaluate.length <1)
+    {
+      error += "请输入您的评价";
+    }
+    if (error)
+    {
+        showErrorMsg(error);
+        return false;
+    }
+    $.ajax({
+        cache: true ,
+        type: "POST",
+        url: $('form')[0].action,
+        data: $('form').serialize(),// 你的formid
+        success: function (data){
+            if (data.status == 1) {
+                window.history.go(-1);
+            };
+          }
+
+    })
+  })
+  //
+$(function(){
+    $('textarea').placeholder();
+     //sidebar
+    $('.body_side .ul_nav a').click(function(){
+    $(this).parent().addClass('active').siblings('li').removeClass('active');
+     });
+})
+</script> 
+<script type="text/javascript"> 
+window.onload = function (){
+    var oStar = document.getElementById("star");
+
+    var aLi = oStar.getElementsByTagName("li");
+
+    var oUl = oStar.getElementsByTagName("ul")[0];
+
+    var oSpan = oStar.getElementsByTagName("span")[1];
+
+    var oP = oStar.getElementsByTagName("p")[0];
+
+    var i = iScore = iStar = 0;
+
+    var aMsg = [
+
+                "很不满意|差得太离谱，与卖家描述的严重不符，非常不满",
+
+                "不满意|部分有破损，与卖家描述的不符，不满意",
+
+                "一般|质量一般，没有卖家描述的那么好",
+
+                "满意|质量不错，与卖家描述的基本一致，还是挺满意的",
+
+                "非常满意|质量非常好，与卖家描述的完全一致，非常满意"
+
+                ]
+    
+    for (i = 1; i <= aLi.length; i++){
+
+        aLi[i - 1].index = i;       
+        //鼠标移过显示分数
+        aLi[i - 1].onmouseover = function (){
+            fnPoint(this.index);
+            //浮动层显示
+            oP.style.display = "block";
+            //计算浮动层位置
+            oP.style.left = oUl.offsetLeft + this.index * this.offsetWidth - 104 + "px";
+            //匹配浮动层文字内容
+            oP.innerHTML = "<em><b>" + this.index + "</b> 分 " + aMsg[this.index - 1].match(/(.+)\|/)[1] + "</em>" + aMsg[this.index - 1].match(/\|(.+)/)[1]
+        };
+        //鼠标离开后恢复上次评分
+        aLi[i - 1].onmouseout = function (){
+            fnPoint();
+            //关闭浮动层
+            oP.style.display = "none"
+        };
+        //点击后进行评分处理
+
+        aLi[i - 1].onclick = function (){
+            iStar = this.index;
+            oP.style.display = "none";
+            oSpan.innerHTML = "<strong>" + (this.index) + " 分</strong> (" + aMsg[this.index - 1].match(/\|(.+)/)[1] + ")"
+        }
+    }
+    //评分处理
+    function fnPoint(iArg){
+        //分数赋值
+        iScore = iArg || iStar;
+        for (i = 0; i < aLi.length; i++) aLi[i].className = i < iScore ? "on" : ""; 
+
+    }   
+};
+
+</script>
+</html>
